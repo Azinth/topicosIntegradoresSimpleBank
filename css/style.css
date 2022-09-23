@@ -24,11 +24,15 @@ main .flex{
 main .textos h1{
   color: #FFFFFF;
   font-size: 60px;
+  width: 85%;
 }
 
 main .textos p{
   color: #FFFFFf;
   font-size: 26px;
+  width: 70%;
+  margin: 20px 0px;
+  line-height: 150%;
 
 }
 
@@ -38,16 +42,25 @@ header .flex{
 
 main .textos a{
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 20px; /*mudei*/
   font-weight: bold;
-  background-color: red;
+  background-color: #2bf2f6; /*mudei*/
   text-decoration: none;
-  margin: 0px 20px 0px 0px;
-  padding: 20px 40px;
-  border-radius: 50px;
+  margin: 0px 20px 0px 0px; 
+  padding: 15px 30px; /*mudei*/
+  border-radius: 50px; 
+  display: inline-block; /*mudei*/
+  color: #3734a9; /*mudei*/
 
 }
 
+/* último filho */
+main .textos a:last-child{
+  background-color: #3734a9;
+  color: #2bf2f6;
+  border: 2px solid #2bf2f6;
+
+}
 
 footer{
 
@@ -95,12 +108,23 @@ header figure{
   float: left;
 } */
 
-header section nav a{
+header nav a{
   text-decoration: none;
   color: #3734a9;
   font-size: 20px;
   margin: 0px 25px 0px 0px;
   font-weight: bold;
+}
+
+header nav a:last-child{
+  padding: 15px 30px;
+  background-color: #2bf2f6;
+  border-radius: 50px;
+}
+
+header nav a:last-child img{
+  position: relative;
+  top: 5px;
 }
 
 section{
