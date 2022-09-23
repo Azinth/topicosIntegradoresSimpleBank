@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
 
 *{
+  margin:0;
+	padding:0;
+
 }
 
 main{
-  display: flex;
-
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #3734a9;
+  font-family: 'Inter', sans-serif;
+  
 }
 body{
   font-family: 'Inter', sans-serif;
-  background-color: #3734a9;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 nav{
@@ -16,16 +26,78 @@ nav{
 }
 
 h1{
-  font-size: 60px;
+  font-size: 50px;
 }
 
-.conteudo{
+p{
+  font-size: 20px;
+}
+
+.titulo{
   background-color: #3734a9;
   color: #FFFFFF;
+  display: inline-block;
+  margin: auto;
+  width: 50%;
+
+}
+.conteudo{
+  padding: 10px 100px 150px 300px;
+  width: 60%;
+  
 }
 
 .formulario{
   background-color: #FFFFFF;
-  padding: 50px;
+  width: 50%;
   border-radius: 10px;
+  display: inline-block;
+  margin: auto;
+}
+
+.principal img{
+  padding: 100px 0px 50px 100px;
+}
+.principal p{
+  padding: 20px 0px 10px 100px;
+  width: 30%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #3734a9;
+}
+
+.principal form{
+  padding: 20px 500px 500px 100px;
+  display: flex;
+  flex-direction: column;
+  color: #3734a9;
+}
+.principal form .cpf{
+  padding: 20px 0px 0px 0px;
+  background-color: rgb(230, 227, 227);
+  border-color:  rgb(230, 227, 227);
+}
+.principal form .password{
+  padding: 20px 0px 0px 0px;
+  background-color: rgb(230, 227, 227);
+  border-color:  rgb(230, 227, 227);
+}
+
+.principal form .senhaTexto{
+  padding: 20px 0px 5px 0px;
+}
+
+.principal form .cpfTexto{
+  padding: 20px 0px 5px 0px;
+}
+
+.login{
+  padding: 10px 0px;
+  background-color: #2bf2f6;
+  border-color: #2bf2f6;
+  color: #3734a9;
+  font-weight: 800;
+  font-size: 15px;
+  border-radius: 50px;
+  margin: 40px 0px 0px 150px;
 }
